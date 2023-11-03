@@ -1,7 +1,8 @@
 import React from 'react';
-import { Carousel } from '../Carousel';
+
 import MovieCard from '../MovieCard';
 import { TMovieBasic } from '../../@types/movies';
+import { Container } from './Movies.styles';
 
 type TMovieBasicsProps = {
   movies: TMovieBasic[]
@@ -9,14 +10,14 @@ type TMovieBasicsProps = {
 export default function Movies({ movies }: TMovieBasicsProps) {
   
   return (
-    <Carousel.Container>
+    <Container>
       {
         movies.map(movie => (
-          <Carousel.Item key={movie.id}>
-            <MovieCard key={movie.id} movie={movie}/>
-          </Carousel.Item>
+          
+          <MovieCard key={movie.id} movie={movie}/>
+          
         ))
       }
-    </Carousel.Container>
+    </Container>
   );
 }

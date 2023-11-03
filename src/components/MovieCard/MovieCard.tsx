@@ -2,7 +2,7 @@ import React from 'react';
 
 import { TMovieBasic } from '../../@types/movies';
 import { formatImageUrl } from '../../utils';
-import { CardImage } from './MovieCard.styles';
+import { CardContainer, CardImage } from './MovieCard.styles';
 import { useNavigate } from 'react-router-dom';
 
 type MovieCardProps = {
@@ -18,9 +18,9 @@ export default function MovieCard({ movie }: MovieCardProps) {
   };
 
   return (
-    <div onClick={handleClick}>
+    <CardContainer onClick={handleClick}>
       <CardImage src={formatImageUrl(poster_path)} alt="" loading='lazy' />
       <span style={{ color: 'white' }}>{title}</span>
-    </div>
+    </CardContainer>
   );
 }

@@ -4,6 +4,7 @@ import { usePopularMovies } from '../../hooks/usePopularMovies';
 
 export default function Home() {
   const { movies } = usePopularMovies();
+  
   return (
     <div>
       <Movies movies={movies} />
