@@ -4,10 +4,11 @@ export const Container = styled.section`
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 450px;
+    min-height: 450px;
     background-color: #861040;
     justify-content: center;
     align-items: center;
+    padding: 20px;
     p {
         color: var(--neutral-color);
         font-size: 48px;
