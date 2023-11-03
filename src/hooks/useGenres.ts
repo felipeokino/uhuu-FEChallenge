@@ -10,7 +10,7 @@ export const useGenres = () => {
   useEffect(() => {
     (async () => {
       const client = new HTTP(new AxiosClient());
-      const response = await client.get<AxiosResponse<{genres: TGenres[]}>>('/genre/movie/list');
+      const response = await client.get<AxiosResponse<{genres: TGenres[]}>>('/genre/movie/list?language=pt-BR');
       setGenres(response.data.genres);
     })();
   }, []);
