@@ -1,12 +1,11 @@
 import React from 'react';
 import { Container } from './Header.styles';
-import ListGenres from '../ListGenres';
+import Logo from '../../assets/logo.svg';
 
 export default function Header() {
   return (
     <Container>
-      <span>Code Challenge</span>
-      <ListGenres  />
+      <img src={Logo} alt="TMDB Logo" />
     </Container>
   );
 }

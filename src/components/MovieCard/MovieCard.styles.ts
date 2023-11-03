@@ -1,7 +1,18 @@
 import styled from 'styled-components';
 
+export const CardContainer = styled.div`
+width: 176px;
+  height: 320px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 768px) {
+    width: 158px;
+  }
+`
 export const CardImage = styled.img`
-  height: 450px;
-  object-position: top;
-  border-radius: 10px;
+  width: 100%;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
 `;

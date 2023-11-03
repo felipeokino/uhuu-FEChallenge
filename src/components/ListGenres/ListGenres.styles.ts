@@ -9,6 +9,7 @@ export const Container = styled.section`
     justify-content: center;
     align-items: center;
     padding: 20px;
+    box-sizing: border-box;
     p {
         color: var(--neutral-color);
         font-size: 48px;
@@ -28,6 +29,19 @@ export const Container = styled.section`
             width: 100%;
             text-align: center;
             color: var(--neutral-color)
+        }
+    }
+    @media screen and (max-width: 768px) {
+        padding: 40px 16px;
+        p {
+            width: 100%;
+            font-size: 24px;
+            text-align: start;
+        }
+        & > div {
+            width: 100%;
+
+            justify-content: start;
         }
     }
 `;
