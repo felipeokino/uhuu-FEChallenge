@@ -1,57 +1,35 @@
-import React from 'react';
-import { Card, CardBody, Divider, Flex, Heading, Image, Stack, Stat, StatLabel, StatNumber, Text } from '@chakra-ui/react';
-import { BiArrowBack } from 'react-icons/bi';
-import { useNavigate, useParams } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import { useMovieDetails } from '../../hooks/useDetails';
-import { formatDate, formatImageUrl } from '../../utils';
-import { BackButton, Container } from './Details.styles';
+import CastList from './subComponents/CastList';
+import MovieDetail from './subComponents/MovieDetail';
+import Recommendations from './subComponents/Recommendations';
+import Trailer from './subComponents/Trailer';
+import Loading from '../../components/Loading';
 
 export default function Details() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const { id } = useParams();
-  const { movie: { title, release_date, budget, poster_path, vote_average, overview } } = useMovieDetails(id!);
+  const { movie: { credits, recommendations, videos, ...rest }, loading, refetch } = useMovieDetails(id!);
 
-  
-  const handleClick = () => {
-    navigate('/popular');
-  };
-  
+  // const handleClick = () => {
+  //   navigate('/popular');
+  // };
+
+  useEffect(() => {
+    refetch();
+  }, [ id ]);
+
+  if (loading) {
+    return <Loading  />;
+  }
+
   return (
-    <Container>
-      <BackButton onClick={handleClick}>
-        <BiArrowBack  />
-      </BackButton>
-      <Card maxW='sm' >
-        <CardBody>
-          <Flex mt='6' >
-            <Image
-              width={300}
-              src={formatImageUrl(poster_path)}
-              alt={`Poster do filme ${title}`}
-              borderRadius='lg'
-            />
-            <Stack ml={16}>
-
-              <Heading size='md' color={'white'}>{title}</Heading>
-              <Text color={'white'}>
-                {overview}
-              </Text>
-              <Text color={'white'}>Data de lançamento: {formatDate(release_date)}</Text>
-              <Stat color={'white'}>
-                <StatLabel>Orçamento:</StatLabel>
-                <StatNumber>{budget?.toLocaleString('en-US', {
-                  style: 'currency',
-                  currency: 'USD'
-                })}</StatNumber>
-              </Stat>
-              <Text color={'white'}>
-                Nota: {vote_average?.toFixed(1)}/10
-              </Text>
-            </Stack>
-          </Flex>
-        </CardBody>
-        <Divider /> 
-      </Card>
-    </Container>
+    <>
+      <MovieDetail movie={rest} />
+      <CastList list={credits?.cast || []} />
+      {videos?.results.length && <Trailer video={videos.results[0]} />}
+      {recommendations?.results.length && <Recommendations list={recommendations.results}  />}
+    </>
   );
 }
