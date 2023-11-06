@@ -5,7 +5,7 @@ export const Container = styled.main`
   flex-direction: column;
   width: 100%;
   height: 600px;
-  background-color: #861040;
+  background-color: var(--background-secondary);
   justify-content: center;
   align-items: center;
   padding: 20px;
@@ -82,35 +82,10 @@ export const UserRating =styled.div`
   align-items: center;
   font-weight: 400;
   gap: 8px;
-`
-
-export const BackButton = styled.button`
-  width: 3rem;
-  height: 3rem;
-  border-radius: 1.5rem;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  top: 0;
-  right: 0;
-  background-color: #666;
-  cursor: pointer;
-  z-index: 100;
-  transition: 0.3s;
-  border: none;
-  outline: none;
-  &:hover {
-    scale: 1.1;
-  }
-  &:active {
-    scale: 1;
-  }
 `;
 
 export const ProductionDetails = styled.section`
   display: flex;
   justify-content: start;
   
-`
+`;

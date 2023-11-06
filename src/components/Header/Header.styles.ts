@@ -6,7 +6,7 @@ export const Container = styled.header`
     height: 56px;
     top: 0;
     left: 0;
-    background-color: #E73980;
+    background-color: var(--background-primary);
     color: white;
     justify-content: start;
     align-items: center;

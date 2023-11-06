@@ -25,10 +25,10 @@ export const PaginationButton = styled.button<{disabled?: boolean}>`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #E73980;
+  background: var(--background-primary);
   cursor: ${({ disabled }) => disabled? 'not-allowed' : 'pointer'};
 `;
 
 export const PaginationStep = styled(PaginationButton)<{active: boolean}>`
-  background: ${props => props.active ? '#861040' : '#E73980'};
+  background: ${props => props.active ? 'var(--background-secondary)' : 'var(--background-primary)'};
 `;
