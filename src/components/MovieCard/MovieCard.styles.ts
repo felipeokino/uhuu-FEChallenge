@@ -15,9 +15,13 @@ export const CardContainer = styled.div`
     align-items: flex-start;
     gap: 4px;
   }
+  & > div > span:first-of-type {
+    display: block;
+    height: 48px;
+  }
   & > div > span:last-of-type {
     color: var(--neutral-color-gray900);
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;

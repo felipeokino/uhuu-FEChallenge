@@ -2,7 +2,7 @@ import React from 'react';
 import Movies from '../../components/Movies';
 import { usePopularMovies } from '../../hooks/usePopularMovies';
 import ListGenres from '../../components/ListGenres';
-import Loading from '../../components/Loading';
+import { Loading } from '../../components/Loading';
 import Pagination from '../../components/Pagination';
 
 const MAX_PAGE = 500;

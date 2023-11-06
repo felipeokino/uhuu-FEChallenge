@@ -1,1 +1,8 @@
-export { default } from './Loading';
+import Loading from './Loading';
+import LoadingSkeleton from './LoadingSkeleton';
+
+export {
+  Loading,
+  LoadingSkeleton
+};
+

@@ -42,6 +42,15 @@ export const Container = styled.section`
             width: 100%;
 
             justify-content: start;
+            
+        }
+    }
+    @media screen and (min-width: 1600px) {
+        p {
+            width: 50%;
+        }
+        & > div {
+            width: 30%;
         }
     }
 `;
