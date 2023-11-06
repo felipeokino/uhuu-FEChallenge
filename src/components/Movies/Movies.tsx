@@ -13,9 +13,7 @@ export default function Movies({ movies }: TMovieBasicsProps) {
     <Container>
       {
         movies.map(movie => (
-          
-          <MovieCard key={movie.id} movie={movie}/>
-          
+          <MovieCard key={movie.id} movie={movie} withReleaseDate/>
         ))
       }
     </Container>
