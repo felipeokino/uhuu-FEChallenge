@@ -1,12 +1,6 @@
-// enum PaginationStep {
-//   MOBILE = 3,
-//   OTHER = 6
-// }
 export const generatePaginationList = (startAt: number, size = 1) => {
-  // const isMobile = window.innerWidth <= 640;
   const startIndex = 0;
   let paginationSize = 6;
-  // let paginationSize = isMobile ? PaginationStep.MOBILE : PaginationStep.OTHER;
 
   if (size < paginationSize)
     paginationSize = size === 1 ? size-1 : size;
