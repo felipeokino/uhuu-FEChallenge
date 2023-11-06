@@ -1,4 +1,6 @@
+import { Actor, CrewMember } from '../crew';
 import { TGenres } from '../genres';
+import { Video } from '../videos';
 
 export type TMovieBasic = {
     adult: boolean;
@@ -53,6 +55,19 @@ export type TMovieBasic = {
     production_companies: ProductionCompany[];
     production_countries: ProductionCountry[];
     release_date: string;
+    release_dates: {
+      results: {
+        iso_3166_1: string;
+        release_dates: {
+          certification: string;
+          descriptors: unknown[]
+          iso_639_1: string
+          note: string
+          release_date: string
+          type: number
+        }[]
+      }[]
+    };
     revenue: number;
     runtime: number;
     spoken_languages: SpokenLanguage[];
@@ -62,4 +77,14 @@ export type TMovieBasic = {
     video: boolean;
     vote_average: number;
     vote_count: number;
+    credits: {
+      cast: Actor[];
+      crew: CrewMember[];
+    };
+    recommendations: {
+      results: TMovieBasic[]
+    },
+    videos: {
+      results: Video[]
+    }
   }
