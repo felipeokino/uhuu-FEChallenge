@@ -46,14 +46,14 @@ Start the server
 # Desafio técnico para Frontend - Uhuu!
 Este repositório faz parte do processo seletivo da Uhuu.
 
-## 🛠️ Tech Stack  
+## 🛠️ Ferramentas  
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white) ![](https://img.shields.io/badge/TMDB%20API-E73980?style=for-the-badge)
 > **Important**
 > **Eu usei Node v18.17.1** 
 
 
-## Run Locally  
-Clone o repositório localmente
+## Rode localmente 
+Clone o repositório
 
 ~~~bash  
   git clone https://github.com/felipeokino/uhuu-FEChallenge.git
