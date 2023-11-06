@@ -1,5 +1,5 @@
 ![Uhuu logo image](https://camo.githubusercontent.com/ce2dafcf10fd074796f9b2a196b8109f0ca7d15226d798eb34d5378e4820cc28/68747470733a2f2f692e696d6775722e636f6d2f724e4f46697a302e6a706567)
-# Uhuu - Frontend Code Challenge
+# Uhuu! - Frontend Code Challenge
 This repo is a part of the Uhuu selection process.
 
 ## 🛠️ Tech Stack  
@@ -43,7 +43,7 @@ Start the server
 
 ---
 
-# Desafio técnico para Frontend - Uhuu
+# Desafio técnico para Frontend - Uhuu!
 Este repositório faz parte do processo seletivo da Uhuu.
 
 ## 🛠️ Tech Stack  
