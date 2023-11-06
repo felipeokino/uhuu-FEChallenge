@@ -11,6 +11,7 @@ export const Container = styled.header`
     justify-content: start;
     align-items: center;
     img {
+        cursor: pointer;
         margin-left: 112px;
     }
     @media screen and (max-width: 768px) {
