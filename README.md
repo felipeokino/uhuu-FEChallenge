@@ -1,46 +1,82 @@
-# Getting Started with Create React App
+![Uhuu logo image](https://camo.githubusercontent.com/ce2dafcf10fd074796f9b2a196b8109f0ca7d15226d798eb34d5378e4820cc28/68747470733a2f2f692e696d6775722e636f6d2f724e4f46697a302e6a706567)
+# Uhuu - Frontend Code Challenge
+This repo is a part of the Uhuu selection process.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🛠️ Tech Stack  
 
-## Available Scripts
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) 
+![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
+![](https://img.shields.io/badge/TMDB%20API-E73980?style=for-the-badge)
+> **Important**
+> **I used Node v18.17.1** 
 
-In the project directory, you can run:
 
-### `npm start`
+## Run Locally  
+Clone the project  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+~~~bash  
+  git clone https://github.com/felipeokino/uhuu-FEChallenge.git
+~~~
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Go to the project directory  
 
-### `npm test`
+~~~bash  
+  cd uhuu-FEChallenge
+~~~
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Install dependencies  
 
-### `npm run build`
+~~~bash  
+(pnpm | npm | yarn) install
+~~~
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+> **Note**
+>Create .env file following env.example
+>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Start the server  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+~~~bash  
+(pnpm | npm | yarn) start
+~~~  
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Desafio técnico para Frontend - Uhuu
+Este repositório faz parte do processo seletivo da Uhuu.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🛠️ Tech Stack  
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white) ![](https://img.shields.io/badge/TMDB%20API-E73980?style=for-the-badge)
+> **Important**
+> **Eu usei Node v18.17.1** 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Run Locally  
+Clone o repositório localmente
 
-## Learn More
+~~~bash  
+  git clone https://github.com/felipeokino/uhuu-FEChallenge.git
+~~~
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Vá para o repositório  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+~~~bash  
+  cd uhuu-FEChallenge
+~~~
+
+Instale as dependência:
+
+~~~bash  
+(pnpm | npm | yarn) install
+~~~
+
+> **Note**
+>Crie o arquivo .env seguindo o env.example
+>
+
+Inicie o servidor:
+
+~~~bash  
+(pnpm | npm | yarn) start
+~~~  
