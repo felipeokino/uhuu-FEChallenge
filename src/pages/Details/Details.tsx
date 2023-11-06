@@ -5,7 +5,7 @@ import CastList from './subComponents/CastList';
 import MovieDetail from './subComponents/MovieDetail';
 import Recommendations from './subComponents/Recommendations';
 import Trailer from './subComponents/Trailer';
-import Loading from '../../components/Loading';
+import { Loading } from '../../components/Loading';
 
 export default function Details() {
   // const navigate = useNavigate();

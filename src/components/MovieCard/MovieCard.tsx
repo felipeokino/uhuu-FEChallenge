@@ -4,7 +4,7 @@ import { TMovieBasic } from '../../@types/movies';
 import { formatImageUrl, transformDateToSimpleMonth } from '../../utils';
 import { CardContainer, CardImage } from './MovieCard.styles';
 import { useNavigate } from 'react-router-dom';
-import LoadingSkeleton from '../Loading/LoadingSkeleton';
+import { LoadingSkeleton } from '../Loading';
 
 type MovieCardProps = {
   movie: TMovieBasic,
