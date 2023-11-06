@@ -4,10 +4,11 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyles = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
   :root {
-  --background-primary: #151515;
-  --background-secondary: #1f1f1f;
+  --background-primary: #E73980;
+  --background-secondary: #861040;
   --neutral-color: #FFFFFF;
   --neutral-color-gray900: #131313;
+  --neutral-color-black: #000000;
 }
 body {
   margin: 0;

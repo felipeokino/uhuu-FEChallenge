@@ -5,7 +5,7 @@ export const Container = styled.section`
     flex-direction: column;
     width: 100%;
     min-height: 450px;
-    background-color: #861040;
+    background-color: var(--background-secondary);
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -65,9 +65,9 @@ export const ButtonComponent = styled.button<{selected?: boolean}>`
     border: none;
     padding: 8px 16px;
     background-color: var(--neutral-color);
-    color: black;
+    color: var(--neutral-color-black);
     border-radius: 4px;
     background-color: ${props => props.selected ? '#D18000':'var(--neutral-color)'};
-    color: ${props => props.selected ? 'var(--neutral-color)':'#000000'};
+    color: ${props => props.selected ? 'var(--neutral-color)':'var(--neutral-color-black)'};
     transition: .3s;
 `;

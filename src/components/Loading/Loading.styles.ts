@@ -11,13 +11,13 @@ export const LoadingContainer = styled.div`
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #E73980;
+  background-color: var(--background-primary);
   z-index: 100;
 `;
 
 export const Loader = styled.div`
   border: 4px solid rgba(0, 0, 0, 0.1);
-  border-top: 4px solid #861040;
+  border-top: 4px solid var(--background-secondary);
   border-radius: 50%;
   width: 50px;
   height: 50px;
