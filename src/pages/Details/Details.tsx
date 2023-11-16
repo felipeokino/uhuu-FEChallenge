@@ -28,8 +28,8 @@ export default function Details() {
     <>
       <MovieDetail movie={rest} />
       <CastList list={credits?.cast || []} />
-      {videos?.results.length && <Trailer video={videos.results[0]} />}
-      {recommendations?.results.length && <Recommendations list={recommendations.results}  />}
+      {!!videos?.results.length && <Trailer video={videos.results[0]} />}
+      {!!recommendations?.results.length && <Recommendations list={recommendations.results}  />}
     </>
   );
 }
