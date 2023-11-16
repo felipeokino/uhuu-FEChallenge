@@ -65,7 +65,7 @@ Vá para o repositório
   cd uhuu-FEChallenge
 ~~~
 
-Instale as dependência:
+Instale as dependências:
 
 ~~~bash  
 (pnpm | npm | yarn) install
