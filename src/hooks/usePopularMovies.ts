@@ -40,13 +40,15 @@ export const usePopularMovies = () => {
 
   useEffect(() => {
     (async () => {
-      setLoading(true);
+      
       
       const hasFilter = genres? `&with_genres=${genres}`: '';
       if (hasFilter)
         await fetchFilteredMovies();
-      else 
+      else {
+        setLoading(true);
         await fetchPopularMovies();
+      }
       
     })();
   }, [ filters ]);
