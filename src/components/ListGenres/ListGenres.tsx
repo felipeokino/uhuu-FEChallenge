@@ -18,7 +18,7 @@ export default function ListGenres(){
 
   const handleClick = (genre: number) => {
     const selected = new Set(selectedGenre);
-    console.log(selectedGenre, genre);
+    
     if (selected.has(genre)) 
       selected.delete(genre);
     else 
